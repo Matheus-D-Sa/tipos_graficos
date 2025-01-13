@@ -12,4 +12,4 @@
   - **Regressão**
 
   # Considerações finais
-   Apenas experimentando o que pode ser utilizado com essas bibliotecas em python na criação de gráficos ≧◠‿◠≦✌
+   Apenas experimentando o que pode ser utilizado com as bibliotecas em python na criação de gráficos ≧◠‿◠≦✌
