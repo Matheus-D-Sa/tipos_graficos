@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 df = pd.read_csv('ecommerce_estatistica.csv')
-print(df.head().to_string())
+# print(df.head().to_string())
 
 # Gráfico de Pizza
 x = df['Qtd_Vendidos'].value_counts().index
