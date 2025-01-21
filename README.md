@@ -1,5 +1,5 @@
 # Modelos de Gráficos 
- Executando pequenas linhas de código em python para apresentação de dados extraídos de um arquivo .csv para um Dataframe (acesssando as bibliotecas matplotlib, seaborn e pandas) em diferentes tipos de gráficos. 
+ Executando pequenas linhas de código em python para apresentação de dados extraídos de um arquivo .csv para um Dataframe (acesssando as bibliotecas matplotlib, plotly, seaborn e pandas) em diferentes tipos de gráficos. 
 
 # Gráficos utilizados:
  
