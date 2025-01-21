@@ -100,7 +100,7 @@ def grafico_4():
 
     # Criando o gráfico de barras
     fig4 = px.bar(gender_counts, x='Gênero', y='Quantidade',
-                 title='Divisão de Gêneros',
+                 title='Barra - Divisão de Gêneros',
                  labels={'Gênero': 'Tipos de Gêneros Disponíveis', 'Quantidade': 'Quantidade'},
                  color='Quantidade', color_discrete_sequence=['red'])
 
@@ -123,7 +123,7 @@ def grafico_5():
         df_pie,
         names='Qtd_Vendidos',
         values='Quantidade',
-        title='Distribuição de Quantidade de Produtos Vendidos',
+        title='Pizza - Distribuição de Quantidade de Produtos Vendidos',
         hole=0.4,  # Para gráfico sólido (sem buraco no centro)
     )
 
