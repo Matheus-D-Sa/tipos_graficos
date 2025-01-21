@@ -82,7 +82,7 @@ def grafico_3():
 
     # Adicionando o título
     fig3.update_layout(
-        title='Correlação de Preço e Desconto',
+        title='Mapa de Calor - Correlação de Preço e Desconto',
         xaxis_title='Variáveis',
         yaxis_title='Variáveis',
         title_x=0.5,  # Centralizando o título
