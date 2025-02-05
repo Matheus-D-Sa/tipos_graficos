@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
 import pandas as pd
 
 df = pd.read_csv('ecommerce_estatistica.csv')
@@ -23,4 +25,46 @@ plt.ylabel('Desconto')
 
 # plt.savefig('grafico_2.png') # Salvar Imagem
 plt.tight_layout() # Ajustar espaçamentos
-plt.show()
+# plt.show() # Mostrar em Formato Aplicativo
+
+def grafico_2():
+    # Dispersão
+    # Criar figura com subplots
+    fig2 = make_subplots(rows=1, cols=2, subplot_titles=('Dispersão - Preço e Preço', 'Dispersão - Preço e Desconto'))
+
+    # Adicionar primeiro gráfico de dispersão
+    fig2.add_trace(
+        go.Scatter(
+            x=df['Preço'],
+            y=df['Preço'],
+            mode='markers',
+            marker=dict(color='#fc0328'),
+            showlegend=False
+        ),
+        row=1, col=1
+    )
+
+    # Adicionar segundo gráfico de dispersão
+    fig2.add_trace(
+        go.Scatter(
+            x=df['Preço'],
+            y=df['Desconto'],
+            mode='markers',
+            marker=dict(color='#fc0328', opacity=0.6, size=10),
+            showlegend=False
+        ),
+        row=1, col=2
+    )
+
+    # Atualizar layout
+    fig2.update_layout(
+        margin=dict(t=50, b=50, l=50, r=50),
+        showlegend=False
+    )
+
+    # Atualizar títulos dos eixos
+    fig2.update_xaxes(title_text="Preço", row=1, col=1)
+    fig2.update_yaxes(title_text="Preço", row=1, col=1)
+    fig2.update_xaxes(title_text="Preço", row=1, col=2)
+    fig2.update_yaxes(title_text="Desconto", row=1, col=2)
+    return fig2
