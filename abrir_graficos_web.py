@@ -1,16 +1,16 @@
-from histograma import grafico_1
-from dispersao import grafico_2
-from mapa_de_calor import grafico_3
-from barra import grafico_4
-from pizza import grafico_5
-from densidade import grafico_6
-from regressao import grafico_7
+from histograma import grafico_h
+from dispersao import grafico_di
+from mapa_de_calor import grafico_m
+from barra import grafico_b
+from pizza import grafico_p
+from densidade import grafico_de
+from regressao import grafico_r
 import pandas as pd
 from dash import Dash, html, dcc
 
 
 def cria_graficos(df):
-    return grafico_1() , grafico_2(), grafico_3(), grafico_4(), grafico_5(), grafico_6(), grafico_7()
+    return grafico_h() , grafico_di(), grafico_m(), grafico_b(), grafico_p(), grafico_de(), grafico_r()
 
 def cria_app(df):
     # Criar App

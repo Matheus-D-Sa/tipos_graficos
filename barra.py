@@ -18,7 +18,7 @@ plt.ylabel('Quantidade')
 plt.tight_layout()
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_4():
+def grafico_b():
     # Barra
     # Dados
     gender_counts = df['Gênero'].value_counts().reset_index()

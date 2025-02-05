@@ -16,7 +16,7 @@ plt.grid(True)
 # plt.savefig('grafico_1.png') # Salvar Imagem
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_1():
+def grafico_h():
     # Histograma / WEB
     fig1 = px.histogram(df, x='Preço', nbins=100, title='Histograma - Distribuição de Preço', color_discrete_sequence=['#09b0ed'])
     fig1.update_layout(

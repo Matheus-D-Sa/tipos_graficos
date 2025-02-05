@@ -16,7 +16,7 @@ plt.title('Distribuição de Quantidade de Produtos Vendidos')
 plt.tight_layout()
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_5():
+def grafico_p():
     # Pizza
     # Preparação dos dados
     df_pie = df['Qtd_Vendidos'].value_counts().reset_index()

@@ -27,7 +27,7 @@ plt.ylabel('Desconto')
 plt.tight_layout() # Ajustar espaçamentos
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_2():
+def grafico_di():
     # Dispersão
     # Criar figura com subplots
     fig2 = make_subplots(rows=1, cols=2, subplot_titles=('Dispersão - Preço e Preço', 'Dispersão - Preço e Desconto'))

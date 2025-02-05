@@ -16,7 +16,7 @@ plt.ylabel('Densidade')
 plt.tight_layout()
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_6():
+def grafico_de():
     # Densidade
     # Gerando os dados de densidade com preenchimento
     fig6 = ff.create_distplot(

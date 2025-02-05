@@ -15,7 +15,7 @@ plt.ylabel('Preço')
 plt.tight_layout()
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_7():
+def grafico_r():
     # Regressão
     fig7 = px.scatter(df, x='Desconto', y='Preço', trendline='ols',  # Adiciona a linha de regressão
         title='Regressão de Preço por Desconto')

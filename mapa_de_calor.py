@@ -14,7 +14,7 @@ plt.title('Correlação de Preço e Desconto')
 # plt.savefig('grafico_3.png') # Salvar Imagem
 # plt.show() # Mostrar em Formato Aplicativo
 
-def grafico_3():
+def grafico_m():
     # Mapa de Calor
     # Gerando dados de correlação
     corr = df[['Preço', 'Desconto']].corr()
